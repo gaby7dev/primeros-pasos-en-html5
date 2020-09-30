@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios IV</title>
+    <style>
+        form {
+            width: 30%;
+        }
+        fieldset input { 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios IV - Atributos</h1>
+
+    <form action="#" autocomplete="off">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name">Nombre:</label> 
+            <input type="text" id="name" maxlength="5" required autofocus>
+             <!-- required (necesario)  | autofocus hace foco en un campo.-->
+            <br>
+            <label for="second-name">Segundo Nombre:</label> 
+            <input type="text" id="second-name" disabled>
+            <br>
+            <label for="lastname">Apellido:</label> 
+            <input type="text" id="lastname" minlength="4">
+            <!-- disabled (desabilitar) -->
+            <br>
+            <label for="age">Edad:</label> 
+            <input type="number" id="age" min="18" max="20">
+        </fieldset>
+        <label for="man">Hombre</label>
+        <input type="radio" name="sex" id="man" checked> 
+        <!-- cheked deja seleccionado un valor por defector siempre que se recargue la página -->
+        <br>
+        <label for="woman">Mujer</label>
+        <input type="radio" name="sex" id="woman">
+        <br>
+        <label for="otro">Otro</label>
+        <input type="radio" name="sex" id="otro">
+        <br>
+        <select name="languages" id="">
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+            <!-- selected deja seleccionado un valor por defecto -->
+            <option value="js">JS</option>
+        </select>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

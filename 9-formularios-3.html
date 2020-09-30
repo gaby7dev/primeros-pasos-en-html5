@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios III</title>
+</head>
+<body>
+    <h2>select 1</h2>
+
+    <form action="#">
+        <label for="languages">Lenguajes</label>
+        <select  id="languages">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+    </form>
+
+    <h2>select 2</h2>
+
+    <form action="#">
+        <label for="languages2">Lenguajes</label>
+        <br>
+        <select size="7" multiple id="languages2">
+            <optgroup label="Lenguajes de marcado">
+                <option value="html">HTML</option>
+                <option value="xml">XML</option>
+            </optgroup>
+            <optgroup label="Lenguajes de diseño">
+                <option value="css">CSS</option>
+            </optgroup> 
+            <optgroup label="Lenguajes de programación">
+                <option value="js">JS</option>
+            </optgroup>            
+        </select>
+    </form>
+    <h2>Textarea</h2>
+    <form action="#">
+        <label for="msj">Mensaje</label> <br>
+        <textarea name="mensaje" id="msj" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

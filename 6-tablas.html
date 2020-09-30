@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table {
+            text-align: center;
+        }
+        th {
+            background: lightblue;
+        }
+        .col-color {
+            background: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla</h1>
+
+    <table border="1">
+        <!-- titulo de la página -->
+        <caption>Tareas semanales</caption>
+        <!-- agrupar columnas -->
+        <colgroup>
+            <col span="5">
+            <col class="col-color">
+        </colgroup>
+        <thead> 
+            <!-- Cabeceras de la tabla -->
+            <tr>
+                <!-- fila 1 y las celdas de cada cabecera -->
+                <th>HS</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cuerpo de la tabla -->
+            <tr>
+                <!-- fila 2 y sus celdas -->
+                <td>08:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10:30</td>
+                <td colspan="5">Descanso</td>
+            </tr>
+            <tr>
+                <td colspan="5">Charla</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr><tr>
+                <td>13:00</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Todal de horas</td>
+                    <td colspan="5"> 4 horas</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>

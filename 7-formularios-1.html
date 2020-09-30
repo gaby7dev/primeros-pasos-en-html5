@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios html 1</title>
+    <style>
+        label, input {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="#">
+        <label for="nombre">Nombre:</label>
+        <!-- for="nombre" se vincula con id="nombre" -->
+        <input type="text" id="nombre">
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age">
+
+        <label for="pass">password:</label>
+        <input type="password" id="pass">
+
+        <button>Enviar Formulario</button>
+        <input type="reset" value="Resetear Formulario">
+    </form>
+</body>
+</html>

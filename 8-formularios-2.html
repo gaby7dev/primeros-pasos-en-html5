@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios II</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIOS II</h1>
+    </header>
+    <form action="#">
+        <legend>Seleccione sexo</legend>
+        <label for="man">Hombre</label>
+        <input type="radio" name="sex" id="man">
+        <label for="woman">Mujer</label>
+        <input type="radio" name="sex" id="woman">
+        <!-- Al poner el atributo name="sex" en ambos inputs, lo que hacemos es agruparlos en un mismo grupo y esto permite que sólo se pueda seleccionar uno a la vez-->
+
+        <!-- los legend nos permite diferenciar un contenido de otro -->
+        <legend>Seleccionar tecnología</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="tech" id="html"> <br>
+        <label for="css">CSS</label>
+        <input type="checkbox" name="tech" id="css"> <br>
+        <label for="js">JS</label> 
+        <input type="checkbox" name="tech" id="js">
+        <!-- Los checkbox, a diferencia de lo radio, si pueden ser utilizados para seleccionar varias opciones a la vez -->
+        <br>
+        <br>
+        <label for="date">Fecha</label>
+        <input type="date" name="" id="date"> <br>
+        <label for="time">Hora</label>
+        <input type="time" name="" id="time"> <br>
+        <label for="month">Mes</label>
+        <input type="month" name="" id="month"> <br>
+        <label for="week">Semana</label>
+        <input type="week" name="" id="week"> <br>
+        <br>
+        <br>
+        <label for="color">COLOR</label>
+        <input type="color" name="" id="color"> <br>
+        <label for="correo">CORREO: </label>
+        <input type="email" id="correo"> <br>
+        <label for="rango">Rango: </label>
+        <input type="range" id="rango" min="0" max="50" step="10"> <br>
+        <label for="sr">Buscar</label>
+        <input type="search" id="sr"> <br>
+        <label for="tl">Teléfono</label>
+        <input type="tel" id="tl">
+    </form>
+
+    <form action="#" enctype="multipart/form-data">
+        <input type="file" name="" id="archivo">
+        <!-- Con js se le puede dar más utilidad -->
+    </form>
+    <br> <br>
+    <form action="#">
+        <label for="browsers">Elegir navegador</label>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="IE">
+            <option value="Safari">
+        </datalist>
+    </form>
+</body>
+</html>
